@@ -1,4 +1,4 @@
-# PB: demo app for angular 1.6 style;
+# PB: demo app for angular 1.6 style (work in progress);
 
 TODO: Implement concepts:
 * Nested components
