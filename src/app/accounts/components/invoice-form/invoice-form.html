@@ -1,0 +1,18 @@
+<h3 ng-show="$ctrl.invoice.id">Edit Invoice</h3>
+<h3 ng-hide="$ctrl.invoice.id">Adding New  Invoice</h3>
+<div class="form-group">
+  <label class="control-label">Invoice Name:</label>
+  <input type="text" ng-model="$ctrl.invoice.name">
+</div>
+<div class="form-group">
+  <label class="control-label">Invoice Amount:</label>
+  <input type="text" ng-model="$ctrl.invoice.amount">
+</div>
+<div class="form-group">
+  <label class="control-label">Amount Due:</label>
+  <input type="text" ng-model="$ctrl.invoice.due">
+</div>
+<div class="ml125 form-group">
+  <button class="btn btn-primary btn-sm" ng-click="$ctrl.save()">Save</button>
+  <a class="btn btn-default btn-sm" ui-sref="invoices.list({id: $ctrl.account.id})">Cancel</a>
+</div>
